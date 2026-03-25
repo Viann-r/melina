@@ -1,0 +1,50 @@
+:root {
+    --textcolor404: black;
+    --width: 1400px;
+    --left: 60px;
+}
+body {
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20201226/pngtree-japanese-new-year-japanese-style-happy-new-year-celebration-new-year-image_516346.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.h1404 {
+    margin-top: 100px;
+    font-size: 80px;
+}
+.h2404 {
+    font-size: 40px;
+}
+.a404 {
+    font-size: 20px;
+}
+.text404 {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    color: var(--textcolor404);
+}
+
+@media (max-width: 1279px) {
+:root {
+    --left: 60px;
+    --width: 1159px;
+}
+}
+
+@media (max-width: 768px) {
+:root {
+    --width: 728px;
+    --left: 20px;
+}
+body {
+     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYzwF5vYiR4htfKrB5ZG3nT_Ul3jB4tnPXY0o-RdIPjw&s");
+}
+}
+
+@media (max-width: 480px) {
+:root {
+    --width: 440px;
+    --left: 20px;
+}
+}

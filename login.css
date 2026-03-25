@@ -1,0 +1,90 @@
+:root  {
+    --maincolor: black;
+    --textcolor: white;
+    --left: 60px;
+    --width: 1400px;
+}
+
+body {
+   background-image: url("https://img.freepik.com/free-vector/flat-chinese-new-year-background_23-2149232075.jpg?semt=ais_hybrid&w=740&q=80");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin-top: 30px;
+}
+
+.reg-signin {
+ display: flex;
+ flex-direction: row;
+ gap: 20px;
+ width: 270px;
+}
+#regLink {
+    background-color: var(--maincolor);
+    color: var(--textcolor);
+    border: none;
+}
+#signInLink  {
+    background-color: var(--maincolor);
+    color: var(--textcolor);
+    border: none;
+}
+
+main form {
+    gap: 1rem;
+}
+
+input, button {
+    width: 250px;
+    padding: 0.25rem 0.5rem;
+}
+
+#regReset {
+    background-color: rgb(232, 94, 94);
+}
+#regSubmit {
+    background-color: rgb(126, 232, 94);
+}
+#signInReset {
+    background-color: rgb(232, 94, 94);
+}
+#signInSubmit {
+    background-color: rgb(126, 232, 94);
+}
+
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 1279px) {
+    :root {
+        --left: 50px;
+        --width: 1159px;
+    }
+} 
+
+@media (max-width: 768px) {
+    :root {
+        --left: 20px;
+        --width: 728px;
+    }
+    body {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYzwF5vYiR4htfKrB5ZG3nT_Ul3jB4tnPXY0o-RdIPjw&s");
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --left: 20px;
+        --width: 440px;
+    }
+}

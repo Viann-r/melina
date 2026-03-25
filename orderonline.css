@@ -1,0 +1,236 @@
+:root {
+    --left: 60px;
+    --textcolor: white;
+    --maincolor: black;
+    --width: 1400px;
+    --dishcolor: rgb(33, 33, 33);
+} 
+
+body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXphE3hYruMx7iIcrYpQ9zCbZpy42joW-w3A&s");
+    background-size: cover;
+    background-position: center;
+}
+h1, h2, h3, h4, h5, p {
+    color: var(--textcolor);
+}
+/* main {
+    width: 1400px;
+    height: 400px;
+    background-color: black;
+    margin-left: 60px;
+} */
+.img-food3 {
+    width: var(--width);
+}
+main {
+    width: var(--width);
+    height: 1900px;
+    background-color: var(--maincolor);
+    margin-left: var(--left);
+}
+.OO {
+    width: var(--width);
+    height: 350px;
+    /* background-color: black;
+    margin-left: 60px; */
+    margin-top: 0px;
+   line-height: 1px;
+}
+.OO-h {
+    font-size: 60px;
+    font-weight: 1;
+    padding-top: 70px;
+    padding-left: var(--left);
+}
+.OO-p {
+    padding-left: var(--left);
+    padding-top: 15px;
+    font-weight: 1;
+}
+.AO {
+    width: 160px;
+    height: 30px;
+    background-color: var(--maincolor) ;
+    display: flex;
+    flex-direction: row;
+    border: solid var(--textcolor) 1px;
+    border-radius: 20px;
+    margin-left: var(--left);
+    margin-top: 30px;
+}
+.circle {
+    width: 13px;
+    margin-left: 10px;
+}
+.ao-h {
+    font-size: 15px;
+    font-weight: 1;
+    margin-left: 13px;
+}
+
+.PD {
+    width: 338px;
+    height: 46px;
+    /* background-color: aqua; */
+    margin-left: 60px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+button {
+    background-color: var(--maincolor);
+    color: var(--textcolor);
+    border: solid rgb(169, 169, 169) 1px;
+    font-size: 17px;
+    font-weight: 1;
+}
+.pickup {
+    background-color: var(--dishcolor);
+    border: solid var(--textcolor) 1px;
+}
+
+.time-address {
+    width: 690px;
+    height: 30px;
+    /* background-color: rgb(65, 135, 197); */
+    margin-left: 60px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-weight: 1;
+}
+.pickuptime {
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* background-color: blue; */
+}
+.clock {
+    width: 20px;
+}
+.pt-time {
+    font-size: 17px;
+    margin-left: 7px;
+}
+.change {
+    width: 70px;
+    height: 24px;
+    border: none;
+    background-color: var(--maincolor);
+    color: var(--textcolor);
+    font-size: 17px;
+    text-decoration: underline;
+}
+.change:hover {
+    text-decoration: none;
+}
+.pickupaddress {
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    /* background-color: brown; */
+}
+.location {
+    width: 20px;
+}
+.address {
+    font-size: 17px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+
+.menu-menu {
+    margin-left: var(--left);
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+
+
+.dishwindow {
+    position: fixed;
+    background-color: var(--maincolor);
+    border: solid 2px var(--textcolor);
+    width: 700px;
+    height: 450px;
+    top: 150px;
+    left: 440px;
+    display: none;
+    flex-direction: column;
+}
+
+
+
+.menudiv {
+    /* background-color: aqua; */
+    width: 1280px;
+    height: 420px;
+    margin-left: var(--left);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-auto-flow: column;
+    gap: 20px;
+    /* column-gap: 7px;
+    row-gap: 7px; */
+}
+.dish-oo {
+    background-color: var(--dishcolor);
+    border: var(--textcolor) 2px solid;
+    color: var(--textcolor);
+    font-weight: 1;
+}
+.dishname {
+    font-size: 30px;
+    margin-left: 20px;
+}
+.dishprice {
+    font-size: 17px;
+    margin-left: 20px;
+    /* position: absolute; */
+    margin-top: 80px;  
+}
+.menulink {
+    color: var(--textcolor);
+    font-size: 20px;
+}
+footer {
+    margin-top: 0;
+}
+
+
+@media (max-width: 1279px) {
+    :root {
+        --left: 60px;
+        --width: 1159px;
+    }
+    .menudiv {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --left: 20px;
+        --width: 728px;
+    }
+    .menudiv {
+        width: 650px;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --left: 20px;
+        --width: 440px;
+    }
+    .menudiv {
+        width: 1000px;
+    }
+}

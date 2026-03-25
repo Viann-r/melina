@@ -1,0 +1,302 @@
+:root {
+    --maincolor: black;
+    --textcolor: white;
+    --left: 60px;
+    --width: 1400px;
+    /* --setings: 100px; */
+}
+
+body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXphE3hYruMx7iIcrYpQ9zCbZpy42joW-w3A&s");
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    /* background-image: url("https://yamashirohollywood.com/tokyo_admin/asset/uploads/465/cta/the-magic-of-yamashiro-hollywood--1--c--1-.jpg");
+    background-repeat: no-repeat;
+    position: fixed; */
+    margin-left: var(--left);
+    width: var(--width);
+    height: 2000px;
+    background-color: var(--maincolor);
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.ratd {
+    width: var(--width);
+    background-color: var(--maincolor);
+    color: var(--textcolor);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.syd {
+    font-size: 17px;
+}
+
+.settings {
+    /* background-color: aqua; */
+    width: 950px;
+    height: 144px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: var(--textcolor);
+}
+
+#party-size-s {
+    width: 250px;
+    height: 50px;
+    background-color: var(--maincolor);
+    border: solid 1px var(--textcolor);
+    color: var(--textcolor)
+}
+
+.dateinput {
+    width: 250px;
+    height: 50px;
+    background-color: var(--maincolor);
+    border: solid 1px var(--textcolor);
+    color: var(--textcolor);
+}
+
+#time-se {
+    width: 250px;
+    height: 50px;
+    background-color: var(--maincolor);
+    border: solid 1px var(--textcolor);
+    color: var(--textcolor);
+}
+
+#findatableBtn {
+    align-self: flex-end;
+    width: 120px;
+    height: 50px;
+    background-color: var(--maincolor);
+    color: var(--textcolor);
+    border: solid 2px var(--textcolor);
+    font-size: 17px;
+}
+#findatableBtn:hover {
+    background-color: var(--textcolor);
+    color: var(--maincolor);
+    text-decoration: underline;
+}
+
+.un {
+    display: none;
+}
+.uninv {
+    display: none;
+}
+.un {
+    width: 600px;
+    height: 400px;
+    background-color: var(--textcolor);
+    position: fixed;
+    top: 25%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.un-text {
+    width: 400px;
+    height: 300px; 
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.un-t1 {
+    font-size: 40px;
+}
+.un-t2 {
+    font-size: 18px;
+}
+.close1 {
+ align-self: flex-end;
+ margin-right: 20px;
+}
+.close2 {
+    width: 100px;
+    height: 40px;
+    background-color: var(--maincolor);
+    color: var(--textcolor);
+    border-style: none;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.restaurant {
+    width: var(--width);
+    margin-top: 60px;
+}
+
+.l-a-r {
+    width: var(--width);
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--textcolor);
+}
+.lar-l {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lar-l-text {
+    width: 230px;
+    height: 300px;
+    /* background-color: aqua; */
+    line-height: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    
+}
+.ww {
+    overflow-wrap: break-word;
+    line-height: 30px;
+    font-size: 30p  x;
+}
+.l-a1 {
+    margin-top: 40px;
+}
+.lar-links {
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.lar-r {
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.nametext-i {
+    font-size: 20px;
+}
+.name-i {
+    width: 200px;
+    background-color: var(--maincolor);
+    border: none;
+    border-bottom: solid 2px var(--textcolor);
+    color: var(--textcolor);
+}
+.messagelable {
+    margin-top: 30px;
+    font-size: 20px;
+}
+.message {
+    width: 470px;
+    height: 100px;
+    background-color: var(--maincolor);
+    border: none;
+    border-bottom: solid 2px var(--textcolor);
+    color: var(--textcolor);
+}
+#submitMessage {
+    width: 470px;
+    height: 50px;
+    background-color: var(--maincolor);
+    color: var(--textcolor);
+    border: solid 1px var(--textcolor);
+}
+
+
+iframe {
+    width: var(--width);
+}
+
+footer {
+    margin-top: 0;
+}
+
+@media (max-width: 1279px) {
+    :root {
+        --left: 50px;
+        --width: 1159px;
+    }
+} 
+
+@media (max-width: 768px) {
+    :root {
+        --left: 20px;
+        --width: 728px;
+    }
+    .settings {
+        width: 600px;
+        height: 118px;
+        /* background-color: aqua; */
+    }
+    #party-size-s {
+        width: 150px;
+    }
+    .dateinput {
+        width: 150px;
+    }
+    #time-se {
+        width: 150px;
+    }
+    #findatableBtn {
+        width: 80px;
+    }
+    .l-a-r {
+        height: 800px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --left: 20px;
+        --width: 440px;
+    }
+    .settings {
+        width: 600px;
+        height: 400px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: aqua; */
+    }
+    #party-size-s {
+        width: 250px;
+    }
+    .dateinput {
+        width: 250px;
+    }
+    #time-se {
+        width: 250px;
+    }
+    #findatableBtn {
+        width: 150px;
+        align-self: center;
+        margin-top: 30px;
+    }
+    .l-a-r {
+        height: 800px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .message {
+        width: 400px;
+    }
+    #submitMessage {
+        width: 400px;
+    }
+}
