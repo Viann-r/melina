@@ -294,6 +294,14 @@ footer {
     main {
       height: 4300px;
     }
+    .cartItemsHeader {
+      width: 1100px;
+      left: 16px;
+    }
+    .cartSection {
+      width: 1100px;
+      margin-left: 10px;
+    }
 } 
 
 @media (max-width: 768px) {
@@ -310,11 +318,11 @@ footer {
     }
     .cartItemsHeader {
       width: 600px;
-      margin-left: 30px;
+      margin-left: 1px;
     }
     .cartSection {
       width: 600px;
-      margin-left: 20px;
+      margin-left: 50px;
     }
 }
 
@@ -331,7 +339,7 @@ footer {
     }
     .cartItemsHeader {
       width: 400px;
-      margin-left: 30px;
+      margin-left: 1px;
     }
     .cartSection {
       width: 400px;

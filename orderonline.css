@@ -199,6 +199,8 @@ button {
 .menulink {
     color: var(--textcolor);
     font-size: 20px;
+    display: flex;
+    margin-top: 20px;
 }
 footer {
     margin-top: 0;
@@ -232,5 +234,20 @@ footer {
     }
     .menudiv {
         width: 1000px;
+    }
+    .OO-p {
+        line-height: 20px;
+    }
+    .time-address {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .menudiv {
+        width: 400px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .menulink {
+        margin-top: 360px;
     }
 }

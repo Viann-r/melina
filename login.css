@@ -21,18 +21,7 @@ main {
     margin-top: 30px;
 }
 
-.reg-signin {
- display: flex;
- flex-direction: row;
- gap: 20px;
- width: 270px;
-}
 #regLink {
-    background-color: var(--maincolor);
-    color: var(--textcolor);
-    border: none;
-}
-#signInLink  {
     background-color: var(--maincolor);
     color: var(--textcolor);
     border: none;
@@ -51,12 +40,6 @@ input, button {
     background-color: rgb(232, 94, 94);
 }
 #regSubmit {
-    background-color: rgb(126, 232, 94);
-}
-#signInReset {
-    background-color: rgb(232, 94, 94);
-}
-#signInSubmit {
     background-color: rgb(126, 232, 94);
 }
 

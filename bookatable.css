@@ -35,6 +35,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .syd {
@@ -168,7 +169,8 @@ main {
 .ww {
     overflow-wrap: break-word;
     line-height: 30px;
-    font-size: 30p  x;
+    font-size: 30px;
+    text-align: center;
 }
 .l-a1 {
     margin-top: 40px;
@@ -264,10 +266,10 @@ footer {
 @media (max-width: 480px) {
     :root {
         --left: 20px;
-        --width: 440px;
+        --width: 430px;
     }
     .settings {
-        width: 600px;
+        width: var(--width);
         height: 400px;
         flex-direction: column;
         justify-content: center;
@@ -293,10 +295,13 @@ footer {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
+    .nametext-i {
+        text-align: center;
+    }
     .message {
-        width: 400px;
+        width: 300px;
     }
     #submitMessage {
-        width: 400px;
+        width: 300px;
     }
 }
