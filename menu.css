@@ -268,6 +268,9 @@ body {
 #toCheckOut {
   color: var(--maincolor);
 }
+#deleteAll {
+  color: var(--maincolor);
+}
 
 
 

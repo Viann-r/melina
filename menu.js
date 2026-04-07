@@ -229,3 +229,13 @@ let Order = document.querySelector("#toCheckOut");
 Order.addEventListener("click", () => {
     alert("We have received your order!");
 })
+
+const deleteAllBtn = document.querySelector("#deleteAll");
+
+deleteAllBtn.addEventListener("click", () =>  {
+  fetch("https://restaurant.stepprojects.ge/api/Baskets/GetAll")
+  .then((resp) => resp.json())
+  .then((cartData) => {cartData.forEach((item) => {
+    productDelete(item.product.id)
+  })})
+})

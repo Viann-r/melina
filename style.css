@@ -412,7 +412,7 @@ footer {
 @media (max-width: 480px) {
     :root {
         --left: 20px;
-        --width: 440px;
+        --width: 420px;
     }
     .images {
         height: 146px;
